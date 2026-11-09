@@ -24,7 +24,7 @@ public:
             return false;
         }
 
-        return isSymmetrichelp(left->left,right->right);
-        return isSymmetrichelp(left->right,right->left);
+        return isSymmetrichelp(left->left,right->right) &&
+        isSymmetrichelp(left->right,right->left);
     }
 };
